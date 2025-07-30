@@ -1,0 +1,383 @@
+/* ===== TIPOGRAFÍAS PERSONALIZADAS ===== */
+/* Se importa Pacifico para títulos y Open Sans para texto base */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap');
+
+/* ===== RESET BÁSICO ===== */
+/* Elimina márgenes/paddings por defecto y unifica el modelo de caja */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== ESTILOS GENERALES ===== */
+body {
+  font-family: 'Open Sans', sans-serif; /* Fuente general del texto */
+  background-color: #90e0ef; /* Color de fondo principal */
+  color: #03396c; /* Color del texto base */
+  line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Títulos con tipografía decorativa */
+h2{
+  font-family: 'Pacifico', cursive;
+  color: #0077b6;
+  font-size: 40px;
+}
+h1, h3 {
+  font-family: 'Pacifico', cursive;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+/* Enlaces sin subrayado y con color heredado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== ENCABEZADO GENERAL ===== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #0077b6;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.contenedor-header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Logo + Título a la izquierda */
+.logo-titulo {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 60px;
+  border-radius: 10px;
+}
+
+.titulo {
+  font-size: 1.8rem;
+}
+
+.barra-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.barra-nav a {
+  color: white;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.barra-nav a:hover {
+  background: #ffb703;
+  color: #003049;
+}
+
+/* Hero */
+.galeria img {
+  display: grid;
+  margin:  auto; 
+  border-radius: 10px;
+  gap: 40px;
+}
+
+.promociones {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.promociones h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.galeria-promociones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0 10px;
+}
+
+.promo {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.promo:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+.promo img {
+  width: 100%;
+  height: 535px; /* IMAGEN MÁS GRANDE */
+  object-fit: cover;
+  border-bottom: 3px solid #0077b6;
+}
+
+.promo h3 { 
+  font-size: 2.4rem;
+  color: #0077b6;
+  font-family: 'Pacifico', cursive;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+.promo p {
+  font-size: 1.25rem;
+  color: #333333;
+  padding: 0 25px 30px;
+  text-align: center;
+  line-height: 1.7;
+}
+  
+/* Descripcion de promos */
+
+.tarjetas-wrapper {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.tarjetas-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 1100px; /* 5 tarjetas de 200px + 4 gaps de 20px = 1100px exactos */
+}
+
+.tarjeta {
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0077b6;
+  margin: 0;
+}
+
+.tarjeta span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .promo-desc {
+    width: 45%;
+  }
+}
+
+/* Responsive: En pantallas < 900px, bajan a 2 filas, sin scroll horizontal */
+@media (max-width: 900px) {
+  .promo-desc-container {
+    flex-wrap: wrap;  /* permiten bajar a la siguiente línea */
+    overflow-x: visible;
+    justify-content: center;
+  }
+
+  .promo-desc {
+    flex: 1 1 45%;    /* ancho base 45%, ajustable */
+    max-width: none;
+  }
+}
+
+/* Responsive: En pantallas < 500px, 1 imagen por fila */
+@media (max-width: 500px) {
+  .promo-desc {
+    flex: 1 1 90%;
+    max-width: none;
+  }
+}
+
+/* ======= Footer ======= */
+.footer {
+  background-color: #1a4e97b6;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.95rem;
+  user-select: none;
+  margin-top: auto;
+}
+
+.footer-contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-titulo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #ffb703;
+  margin-bottom: 20px;
+}
+
+/* Tabla en footer */
+.footer-tabla {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-collapse: collapse;
+  background-color: #122858ae;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(8, 59, 167, 0.835);
+}
+
+.footer-tabla th,
+.footer-tabla td {
+  text-align: left;
+  padding: 14px 20px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  vertical-align: top;
+}
+
+.footer-tabla th {
+  background-color: #122858ae;
+  width: 160px;
+  font-weight: 600;
+  border-radius: 8px 0 0 8px;
+}
+
+.horario-lista {
+  list-style: none;
+  padding-left: 0;
+}
+
+.horario-lista li {
+  margin-bottom: 5px;
+}
+
+
+/* Hero */
+.hero-promociones {
+  background: linear-gradient(rgba(0,119,182,0.7), rgba(0,119,182,0.7)), url('../imagenes/Banner.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-promociones h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-promociones p {
+  font-size: 1.2rem;
+}
+
+.promociones {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.promociones h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.galeria-promociones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0 10px;
+}
+
+.promo {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.promo:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+.promo img {
+  width: 100%;
+  height: 535px; /* IMAGEN MÁS GRANDE */
+  object-fit: cover;
+  border-bottom: 3px solid #0077b6;
+}
+
+.promo h3 { 
+  font-size: 2.4rem;
+  color: #0077b6;
+  font-family: 'Pacifico', cursive;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+.promo p {
+  font-size: 1.25rem;
+  color: #333333;
+  padding: 0 25px 30px;
+  text-align: center;
+  line-height: 1.7;
+}

@@ -1,0 +1,494 @@
+/* ===== TIPOGRAFÍAS PERSONALIZADAS ===== */
+/* Se importa Pacifico para títulos y Open Sans para texto base */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap');
+
+/* ===== RESET BÁSICO ===== */
+/* Elimina márgenes/paddings por defecto y unifica el modelo de caja */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== ESTILOS GENERALES ===== */
+body {
+  font-family: 'Open Sans', sans-serif; /* Fuente general del texto */
+  background-color: #90e0ef; /* Color de fondo principal */
+  color: #03396c; /* Color del texto base */
+  line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Títulos con tipografía decorativa */
+h2{
+  font-family: 'Pacifico', cursive;
+  color: #0077b6;
+  font-size: 40px;
+}
+h1, h3 {
+  font-family: 'Pacifico', cursive;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+/* Enlaces sin subrayado y con color heredado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== ENCABEZADO GENERAL ===== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #0077b6;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.contenedor-header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Logo + Título a la izquierda */
+.logo-titulo {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 60px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
+.titulo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Navegación */
+.barra-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.barra-nav a {
+  color: white;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.barra-nav a:hover {
+  background-color: #ffb703;
+  color: #003049;
+}
+
+/* ===== ESTILO FORMULARIO DETALLADO INTEGRADO ===== */
+
+.main-content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.main-content h2 {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color: #0077b6;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Contenedor del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Fieldsets con estilo visual */
+fieldset {
+  border: 2px solid #caf0f8;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f0fdff;
+}
+
+legend {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.3rem;
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+/* Etiquetas */
+label {
+  font-weight: 600;
+  color: #005f73;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Campos del formulario */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="time"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #b2dfdb;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease-in-out;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+/* Área de comentarios */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Botón */
+button[type="submit"] {
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button[type="submit"]:hover {
+  background-color: #004d40;
+}
+
+/* Responsivo */
+@media screen and (max-width: 600px) {
+  .main-content {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  input, select, textarea, button {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* ======= Footer ======= */
+.footer {
+  background-color: #1a4e97b6;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.95rem;
+  user-select: none;
+  margin-top: auto;
+}
+
+.footer-contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-titulo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #ffb703;
+  margin-bottom: 20px;
+}
+
+/* Tabla en footer */
+.footer-tabla {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-collapse: collapse;
+  background-color: #122858ae;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(8, 59, 167, 0.835);
+}
+
+.footer-tabla th,
+.footer-tabla td {
+  text-align: left;
+  padding: 14px 20px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  vertical-align: top;
+}
+
+.footer-tabla th {
+  background-color: #122858ae;
+  width: 160px;
+  font-weight: 600;
+  border-radius: 8px 0 0 8px;
+}
+
+.horario-lista {
+  list-style: none;
+  padding-left: 0;
+}
+
+.horario-lista li {
+  margin-bottom: 5px;
+}
+
+
+/* Hero */
+.hero-promociones {
+  background: linear-gradient(rgba(0,119,182,0.7), rgba(0,119,182,0.7)), url('../imagenes/Banner.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-promociones h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-promociones p {
+  font-size: 1.2rem;
+}
+
+.promociones {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.promociones h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.galeria-promociones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0 10px;
+}
+
+.promo {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.promo:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+.promo img {
+  width: 100%;
+  height: 535px; /* IMAGEN MÁS GRANDE */
+  object-fit: cover;
+  border-bottom: 3px solid #0077b6;
+}
+
+.promo h3 { 
+  font-size: 2.4rem;
+  color: #0077b6;
+  font-family: 'Pacifico', cursive;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+.promo p {
+  font-size: 1.25rem;
+  color: #333333;
+  padding: 0 25px 30px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* ===== CARRITO DE PEDIDOS ===== */
+#carrito-container {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+}
+
+#carrito-container h2 {
+  font-family: 'Pacifico', cursive;
+  color: #0077b6;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#carrito-lista {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+#carrito-lista li {
+  background-color: #f0fdff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #023047;
+}
+
+#carrito-lista li span {
+  font-weight: bold;
+  color: #0077b6;
+}
+
+#carrito-vacio {
+  font-style: italic;
+  color: #666666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Botón de eliminar producto */
+.eliminar-producto {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.eliminar-producto:hover {
+  background-color: #c1121f;
+}
+
+/* Botón para vaciar carrito */
+#vaciar-carrito {
+  padding: 12px;
+  background-color: #f77f00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#vaciar-carrito:hover {
+  background-color: #d00000;
+}
+
+/* ===== CARRITO DE PEDIDOS (Formulario Pedido.html) ===== */
+#tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#tabla-carrito thead {
+  background-color: #0077b6;
+  color: white;
+}
+
+#tabla-carrito th,
+#tabla-carrito td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#tabla-carrito td button {
+  background-color: #e63946;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+#tabla-carrito td button:hover {
+  background-color: #c1121f;
+}
+
+/* Sección del carrito */
+#carrito {
+  margin-top: 40px;
+}
+
+#carrito h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #0077b6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formulario de datos del cliente */
+#form-datos {
+  margin-top: 50px;
+}
+
+#form-datos input[type="hidden"] {
+  display: none;
+}

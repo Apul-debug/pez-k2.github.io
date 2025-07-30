@@ -1,0 +1,139 @@
+/* ===== Estilos adicionales para Detalle de Promoción ===== */
+
+/* Contenedor principal del detalle */
+.contenedor-promocion {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #03396c;
+}
+
+/* Título de la sección */
+.titulo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.8rem;
+  color: #0077b6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Tarjeta promocional (flexbox para imagen y detalles) */
+.tarjeta-promocion {
+  display: flex;
+  gap: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Imagen promo */
+.promo-img {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Detalles de la promo */
+.promo-detalles {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #444;
+}
+
+/* Descripción promo */
+.promo-desc {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Lista de detalles */
+.promo-lista {
+  list-style: none;
+  padding-left: 0;
+  color: #0077b6;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.promo-lista li {
+  margin-bottom: 8px;
+}
+
+/* Botones */
+.btn-cta {
+  display: inline-block;
+  background-color: #ffb703;
+  color: #003049;
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 183, 3, 0.4);
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+  margin-right: 15px;
+}
+
+.btn-cta:hover {
+  background-color: #e6a200;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Botón secundario "Volver" */
+.btn-cta[style*="background-color: #003049"] {
+  background-color: #003049 !important;
+  color: white !important;
+  box-shadow: 0 4px 8px rgba(0, 48, 73, 0.6) !important;
+}
+
+.btn-cta[style*="background-color: #003049"]:hover {
+  background-color: #00507a !important;
+  color: #ffb703 !important;
+}
+
+/* ===== Responsividad ===== */
+
+@media screen and (max-width: 900px) {
+  .tarjeta-promocion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-img,
+  .promo-detalles {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .btn-cta {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .promo-desc {
+    font-size: 1rem;
+  }
+
+  .promo-lista {
+    font-size: 0.95rem;
+  }
+}

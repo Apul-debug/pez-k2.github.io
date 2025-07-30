@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro - PEZ-K2</title>
+  <link rel="icon" href="imagenes/Logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/estilos_inicio_de_sesion_registro.css" />
+  <script src="https://kit.fontawesome.com/3561f854c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html"><img src="imagenes/Logo.png" class="logo-img" alt="Logo"/></a>
+    <h1 class="titulo">PEZ-K2</h1>
+  </header>
+
+  <div class="main-wrapper">
+    <div class="container login-box">
+      <h2 class="login-titulo"><i class="fas fa-user-plus"></i> Crear Cuenta</h2>
+      <form>
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" name="username" placeholder="Usuario" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" name="email" placeholder="Correo electrónico" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="password" placeholder="Contraseña" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="password_confirm" placeholder="Confirmar contraseña" required />
+        </div>
+
+        <button type="submit"><i class="fas fa-check"></i> Registrar</button>
+
+        <p>¿Ya tienes cuenta? <a href="inicio_de_sesion.html">Inicia sesión</a></p>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-contenedor">
+      <h3 class="footer-titulo">Información del Restaurante</h3>
+
+      <table class="footer-tabla">
+        <tr>
+          <th><i class="fas fa-map-marker-alt"></i> Dirección</th>
+          <td>Av. 4a. Avenida 45, Virgencitas, 57300 Cdad. Nezahualcóyotl, Méx.</td>
+        </tr>
+        <tr>
+          <th><i class="fas fa-phone"></i> Teléfono</th>
+          <td>(+52) 123 456 7890</td>
+        </tr>
+        <tr>
+          <th><i class="fas fa-envelope"></i> Correo</th>
+          <td>contacto@pezk2.com</td>
+        </tr>
+        <tr>
+          <th><i class="fas fa-clock"></i> Horarios</th>
+          <td>
+            <ul class="horario-lista">
+              <li>Domingo: 10 a.m. - 8 p.m.</li>
+              <li>Lunes: 10 a.m. - 8 p.m.</li>
+              <li>Martes: <span style="color: #ffb703;">Cerrado</span></li>
+              <li>Miércoles a Sábado: 10 a.m. - 8 p.m.</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+
+      <p>&copy; 2025 Marisquería PEZ-K2. Todos los derechos reservados.</p>
+      <p>LOBOS BOYS | Grupo: G50304</p>
+    </div>
+  </footer>
+
+</body>
+</html>

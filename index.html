@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PEZ-K2</title>
+
+  <!-- Íconos y tipografías -->
+  <script src="https://kit.fontawesome.com/3561f854c8.js" crossorigin="anonymous"></script>
+  <link href="../iconos/fontawesome-free-6.7.2-web/css/all.min.css" rel="stylesheet"> <!-- Font Awesome offline -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Icono y estilos -->
+  <link rel="icon" href="imagenes/Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos_index.css" />
+</head>
+
+<body>    
+
+  <!-- Encabezado -->
+<header class="header">
+  <div class="contenedor-header">
+    <!-- Logo + Título -->
+    <a href="#inicio" class="logo-titulo">
+      <img src="imagenes/Logo.png" alt="Logo PEZ-K2" class="logo-img" />
+      <h2 class="titulo">PEZ-K2</h2>
+    </a>
+
+    <!-- Barra de navegación -->
+    <nav class="barra-nav">
+      <ul>
+        <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="menu platillos/menu.html"><i class="fas fa-utensils"></i> Menú</a></li>
+        <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+        <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+        <li><a href="reserva.html"><i class="fas fa-calendar-check"></i> Reserva</a></li>
+        <li><a href="promocion.html"><i class="fas fa-tags"></i> Promociones</a></li>
+        <li><a href="pedido.html"><i class="fas fa-shopping-cart"></i> Pedidos</a></li>
+        <li><a href="inicio_de_sesion.html"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">    
+    <div class="hero-texto">
+      <h1>Mariscos frescos al estilo costeño</h1>
+      <p>¡Ven a disfrutar del mejor sabor del mar!</p>
+      <a href="menu platillos/me  nu.html" class="btn-cta">Ver Menú</a>
+    </div>
+  </section>
+
+  
+
+  <!-- Menú -->
+  <section id="menu" class="menu">
+    <h2>Lo mas Pedido</h2>
+
+    <div class="platillos">
+      <article class="platillo">
+        <img src="imagenes/Coctel_de_camarones.jpg" alt="Ceviche de camarón"/>
+        <h3 style="color: #0077b6;">Ceviche de Camarón</h3>
+        <p>Preparado con limón, jitomate, cebolla y aguacate fresco.</p>
+      </article>
+
+      <article class="platillo">
+        <img src="imagenes/Empanada.jpg" alt="Empanada de camarón" />
+        <h3 style="color: #0077b6;">Empanada de Camarón</h3>
+        <p>Crujiente por fuera y jugosa por dentro, rellena de camarón al estilo de la casa.</p>
+      </article>
+
+      <article class="platillo">
+        <img src="imagenes/Empandas 2.jpg" alt="Empanadas de camarón" />
+        <h3 style="color: #0077b6;">Empanada de Camarón</h3>
+        <p>Crujiente por fuera y jugosa por dentro, rellena de camarón al estilo de la casa.</p>
+      </article>
+
+      <article class="platillo">
+        <img src="imagenes/Ostiones.jpg" alt="Ostiones frescos" />
+        <h3 style="color: #0077b6;">Ostiones</h3>
+        <p>Frescos y jugosos, servidos al natural para conservar su sabor marino.</p>
+      </article>
+
+      <article class="platillo">
+        <img src="imagenes/Pez.jpg" alt="Pescado empanizado" />
+        <h3 style="color: #0077b6;">Pescado Empanizado</h3>
+        <p>Pescado entero, crujiente por fuera y jugoso por dentro, acompañado de guarnición.</p>
+      </article>
+
+      <article class="platillo">
+        <img src="imagenes/Salsas.jpg" alt="Variedad de salsas" />
+        <h3 style="color: #0077b6;">Salsas</h3>
+        <p>Selección de salsas para realzar el sabor de tus platillos.</p>
+      </article>
+
+      <article class="platillo">
+        <img src="imagenes/Insumos.jpg" alt="Ingredientes frescos" />
+        <h3 style="color: #0077b6;">Ingredientes Frescos</h3>
+        <p>Solo utilizamos insumos frescos y de calidad para garantizar el mejor sabor.</p>
+      </article>
+
+      <article class="platillo">
+        <img src="imagenes/Insumos 2.jpg" alt="Insumos del mar" />
+        <h3 style="color: #0077b6;">Ingredientes Frescos</h3>
+        <p>Mariscos seleccionados del día, frescos y listos para ser cocinados con sazón.</p>
+      </article>
+
+      <a href="imagenes/Menu v.1.pdf" target="_blank" style="background-color: #008CBA; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Ver menú en PDF</a>
+      <a href="imagenes/Menu v.1.png" target="_blank" style="background-color: #008CBA; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Ver menú en Fotografía</a>
+    </div>
+  </section>
+
+  
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea placeholder="Tu mensaje..." rows="5" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- Galería -->
+  <section class="galeria">
+  
+    <h2><p>Visita de nuestro local</p></h2>
+
+    <div class="imagen-galeria">
+      <a href="pagina_detalle2.html"><img src="imagenes/Restaraunte.jpg"></a>
+    </div>
+
+    <div class="imagen-galeria">
+      <a href="pagina_detalle1.html"><img src="imagenes/Interior 2.jpg"></a>
+    </div>
+  </section>
+
+   <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-contenedor">
+      <h3 class="footer-titulo">Información del Restaurante</h3>
+
+      <table class="footer-tabla">
+        <tr>
+          <th><i class="fas fa-map-marker-alt"></i> Dirección</th>
+          <td>Av. 4a. Avenida 45, Virgencitas, 57300 Cdad. Nezahualcóyotl, Méx.</td>
+        </tr>
+        <tr>
+          <th><i class="fas fa-phone"></i> Teléfono</th>
+          <td>(+52) 123 456 7890</td>
+        </tr>
+        <tr>
+          <th><i class="fas fa-envelope"></i> Correo</th>
+          <td>contacto@pezk2.com</td>
+        </tr>
+        <tr>
+          <th><i class="fas fa-clock"></i> Horarios</th>
+          <td>
+            <ul class="horario-lista">
+              <li><strong>Domingo:</strong> 10 a.m. - 8 p.m.</li>
+              <li><strong>Lunes:</strong> 10 a.m. - 8 p.m.</li>
+              <li><strong>Martes:</strong> <span style="color: #ffb703;">Cerrado</span></li>
+              <li><strong>Miércoles a Sabádo:</strong> 10 a.m. - 8 p.m.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Creado por:</th>
+          <td><p>LOBOS BOYS | Grupo: G50304</p></td>
+        </tr>
+        <tr>
+          <th>Redes sociales:</th>
+          <td>  
+            <div class="redes">
+                <a href="https://web.facebook.com/mariscospayos/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+           </td>
+        </tr>
+      </table>
+
+
+      <p>&copy; 2025 Marisquería PEZ-K2. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+

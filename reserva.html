@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PEZ-K2</title>
+
+  <!-- Íconos y tipografías -->
+  <script src="https://kit.fontawesome.com/3561f854c8.js" crossorigin="anonymous"></script>
+  <link href="../iconos/fontawesome-free-6.7.2-web/css/all.min.css" rel="stylesheet"> <!-- Font Awesome offline -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Icono y estilos -->
+  <link rel="icon" href="imagenes/Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos_reserva.css" />
+</head>
+
+<body>    
+
+  <!-- Encabezado -->
+<header class="header">
+  <div class="contenedor-header">
+    <!-- Logo + Título -->
+    <a href="index.html" class="logo-titulo">
+      <img src="imagenes/Logo.png" alt="Logo PEZ-K2" class="logo-img" />
+      <h2 class="titulo">PEZ-K2</h2>
+    </a>
+
+    <!-- Barra de navegación -->
+    <nav class="barra-nav">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="menu platillos/menu.html"><i class="fas fa-utensils"></i> Menú</a></li>
+        <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+        <li><a href="index.html#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+        <li><a href="reserva.html"><i class="fas fa-calendar-check"></i> Reserva</a></li>
+        <li><a href="promocion.html"><i class="fas fa-tags"></i> Promociones</a></li>
+        <li><a href="pedido.html"><i class="fas fa-shopping-cart"></i> Pedidos</a></li>
+        <li><a href="inicio_de_sesion.html"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- FORMULARIO -->
+  <main>
+    <section class="formulario-contenedor">
+      <h2><i class="fas fa-utensils"></i> Reserva tu Mesa</h2>
+      <form>
+
+        <div class="campo">
+          <label for="nombre"><i class="fas fa-user"></i> Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div class="campo">
+          <label for="correo"><i class="fas fa-envelope"></i> Correo electrónico *</label>
+          <input type="email" id="correo" name="correo" required />
+        </div>
+
+        <div class="campo">
+          <label for="telefono"><i class="fas fa-phone"></i> Número de teléfono *</label>
+          <input type="tel" id="telefono" name="telefono" required placeholder="Ej: 5551234567" />
+        </div>
+
+        <div class="campo">
+          <label for="fecha"><i class="fas fa-calendar-alt"></i> Fecha de reserva *</label>
+          <input type="date" id="fecha" name="fecha" required />
+        </div>
+
+        <div class="campo">
+          <label for="hora"><i class="fas fa-clock"></i> Hora de reserva *</label>
+          <input type="time" id="hora" name="hora" required />
+        </div>
+
+        <div class="campo">
+          <label for="personas"><i class="fas fa-users"></i> Número de personas *</label>
+          <input type="number" id="personas" name="personas" min="1" required />
+        </div>
+
+        <button type="submit"><i class="fas fa-check-circle"></i> Reservar</button>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-contenedor">
+      <h3 class="footer-titulo">Información del Restaurante</h3>
+
+      <table class="footer-tabla">
+        <tr>
+          <th><i class="fas fa-map-marker-alt"></i> Dirección</th>
+          <td>Av. 4a. Avenida 45, Virgencitas, 57300 Cdad. Nezahualcóyotl, Méx.</td>
+        </tr>
+        <tr>
+          <th><i class="fas fa-phone"></i> Teléfono</th>
+          <td>(+52) 123 456 7890</td>
+        </tr>
+        <tr>
+          <th><i class="fas fa-envelope"></i> Correo</th>
+          <td>contacto@pezk2.com</td>
+        </tr>
+        <tr>
+          <th><i class="fas fa-clock"></i> Horarios</th>
+          <td>
+            <ul class="horario-lista">
+              <li><strong>Domingo:</strong> 10 a.m. - 8 p.m.</li>
+              <li><strong>Lunes:</strong> 10 a.m. - 8 p.m.</li>
+              <li><strong>Martes:</strong> <span style="color: #ffb703;">Cerrado</span></li>
+              <li><strong>Miércoles a Sabádo:</strong> 10 a.m. - 8 p.m.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Creado por:</th>
+          <td><p>LOBOS BOYS | Grupo: G50304</p></td>
+        </tr>
+        <tr>
+          <th>Redes sociales:</th>
+          <td>  
+            <div class="redes">
+                <a href="https://web.facebook.com/mariscospayos/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+           </td>
+        </tr>
+      </table>
+
+
+      <p>&copy; 2025 Marisquería PEZ-K2. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
